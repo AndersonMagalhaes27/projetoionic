@@ -14,9 +14,9 @@ export class ClientesPage implements OnInit {
   ngOnInit() {
     this.clienteServ.listaDeClientes().subscribe(response=>{
       // O servidor respondeu
-      console.log(response); // remover, apenas para testar no console
+     // console.log(response); // remover, apenas para testar no console
       this.lista = response;
-      console.log(this.lista); // remover, apenas para testar no console
+      //console.log(this.lista); // remover, apenas para testar no console
     },err=>{
     })
   }
